@@ -1,0 +1,38 @@
+name: EcoNETMessages
+version: ${version}
+main: net.github.monkeee.ecoNETMessages.EcoNETMessages
+api-version: '1.21'
+authors: [ _Monkeee ]
+permissions:
+  econet.message.msg:
+    description: Permission to use /message
+    default: true
+  econet.message.toggle:
+    description: Permission to use /communicationtoggle or /ctoggle
+    default: true
+  econet.message.block:
+    description: Permission to use /communicationblock or /cblock
+    default: true
+  econet.message.unblock:
+    description: Permission to use /communicationunblock or /cunblock
+    default: true
+commands:
+  message:
+    description: Sending private messages to other players!
+    aliases:
+      - msg
+      - tell
+      - w
+      - pm
+  communicationblock:
+    description: Blocks a specific player from sending you private messages
+    aliases:
+      - cblock
+  communicationunblock:
+    description: Unblocks a specific player from sending you private messages!
+    aliases:
+      - cunblock
+  communicationtoggle:
+    description: Toggles private messages!
+    aliases:
+      - ctoggle
