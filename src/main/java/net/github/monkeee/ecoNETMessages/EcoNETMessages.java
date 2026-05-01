@@ -22,6 +22,7 @@ public final class EcoNETMessages extends JavaPlugin {
     public void onEnable() {
         instance = this;
         getLogger().info("Loading...");
+        saveResource("storage.db", false);
         database = new Database(this);
         database.connect();
 
