@@ -40,7 +40,7 @@ public class CommunicationUnblock implements CommandExecutor, TabCompleter {
             player.sendMessage(Component.text("Provide a valid player (player is either offline or its yourself"));
             return false;
         }
-        if (db.isBlocked(target.getUniqueId(), player.getUniqueId())) {
+        if (!db.isBlocked(target.getUniqueId(), player.getUniqueId())) {
             player.sendMessage(Component.text("Player "+target.getName()+" is not blocked!").color(NamedTextColor.RED));
             return true;
         }
